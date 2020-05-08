@@ -1,0 +1,16 @@
+Airbnb
+
+1- Navbar
+2- Search form
+3- Cards (flexbox)
+4- Bedrooms's API
+5- Limit of items for each page
+6- Location filter (create new location data)
+7- API google maps (include pins)
+8- Total value of the stay
+
+others
+9- Price filter 
+10- Host filter
+11- Favorite option button
+12- Compare two bedrooms
