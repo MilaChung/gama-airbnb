@@ -3,25 +3,21 @@
     height: 300px;
     position: fixed;
     line-height: 25px;
-    flex-direction: row;
     align-items: flex-start;
-    margin: 10px 10px;
+    padding: 2% 5%;
 }
 
 .nav div.logo a {
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
+    height: auto;
+    max-width: 100%;
+}    
+
+.logo {
+    padding-left: 10%;
 }
 
-.nav div.logo a:hover {
-    color: rgb(245, 112, 119);
-}
-
-.nav div.menu ul li {
-    text-align:right
-
+.menu {
+    justify-content: flex-end;
 }
 
 .nav div.menu ul li a {
@@ -32,6 +28,12 @@
 
 .navbar-dark .nav-item.active .nav-link {
     color: rgb(245, 112, 119);
+    font-weight: bold;
+}
+
+.affix .nav-item.active .nav-link {
+    color: white;
+    font-weight: bold;
 }
 
 .navbar-dark .nav-item .nav-link {
@@ -40,6 +42,15 @@
 
 .navbar-dark .nav-item:hover .nav-link {
     color: rgb(245, 112, 119);
+}
+
+.affix {
+    margin: 0;
+    padding: .5rem 1rem;
+    background-color: rgb(248, 157, 161);
+    height: 70px;
+    z-index: 99999;
+    text-align: center;
 }
 
 .home {
@@ -73,6 +84,7 @@
     margin-right: 1%;
     background-color: rgba(245, 112, 119, 0.8);
     border-color: rgba(245, 112, 119, 0.8);
+    border-radius: 10px;
 }
 
 img {
@@ -124,7 +136,7 @@ img {
     padding: 1rem;
 }
 
-.card-name {
+.card-type {
     color: black;
     font-size: 1.25rem;
     font-weight: 300;
@@ -132,7 +144,7 @@ img {
     text-transform: uppercase;
   }
 
-  .card-text {
+  .card-price {
     flex: 1 1 auto;
     font-size: 0.875rem;
     line-height: 1.5;

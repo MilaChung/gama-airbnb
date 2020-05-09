@@ -183,12 +183,12 @@ function createItem(item) {
   var img = createHtmlElement('img');
   var sectionf = createHtmlElement('section');
   var sections = createHtmlElement('section');
-  var sectiont = createHtmlElement('section');
-  var p = createHtmlElement('p');
+  var pf = createHtmlElement('p');
+  var ps = createHtmlElement('p');
   var button = createHtmlElement('button');
 
-  var type = document.createTextNode(item.type);
-  var name = document.createTextNode(item.name);
+  var type = document.createTextNode(item.property_type);
+  var price = document.createTextNode("R$ " + item.price);
   var btn = document.createTextNode("Ver mais");
   
   $(li).attr("class", "cards-item");
@@ -196,18 +196,18 @@ function createItem(item) {
   $(img).attr("class", "photo");
   $(sectionf).attr("class", "card");
   $(sections).attr("class", "card-content");
-  $(sectiont).attr("class", "card-name");
-  $(p).attr("class", "card-text");
-  $(button).attr("class", "btn");
+  $(pf).attr("class", "card-type");
+  $(ps).attr("class", "card-price");
+  $(button).attr("class", "button");
 
   li.appendChild(sectionf);
   sectionf.appendChild(img);
   sectionf.appendChild(sections);
-  sections.appendChild(sectiont);
-  sections.appendChild(p);
+  sections.appendChild(pf);
+  sections.appendChild(ps);
   sections.appendChild(button);
-  p.appendChild(name);
-  sectiont.appendChild(type);
+  pf.appendChild(type);
+  ps.appendChild(price);
   button.appendChild(btn);
   
   return li;
@@ -227,5 +227,13 @@ $(document).ready(function(){
   createItensAndAppendToList();
 });
 
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 230) {
+      $('.nav').addClass('affix');
+      console.log("OK");
+  } else {
+      $('.nav').removeClass('affix');
+  }
+});
 
 
