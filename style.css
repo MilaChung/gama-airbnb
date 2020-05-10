@@ -45,9 +45,9 @@
 }
 
 .affix {
-    margin: 0;
-    padding: .5rem 1rem;
+    padding: .5rem 4rem;
     background-color: rgb(248, 157, 161);
+    border-radius: 10px;
     height: 70px;
     z-index: 99999;
     text-align: center;
@@ -85,13 +85,17 @@
     background-color: rgba(245, 112, 119, 0.8);
     border-color: rgba(245, 112, 119, 0.8);
     border-radius: 10px;
+    color: white;
 }
 
 img {
     height: auto;
     max-width: 100%;
-    vertical-align: middle;
 }
+
+img.photo {
+    height: 30rem;
+} 
 
 #cards {
     display: flex;
@@ -117,18 +121,6 @@ img {
     overflow: hidden;
 }
 
-.photo {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-    filter: contrast(70%);
-    overflow: hidden;
-    position: relative;
-    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
-} 
-
 .card-content {
     display: flex;
     flex: 1 1 auto;
@@ -142,11 +134,67 @@ img {
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase;
-  }
+}
 
-  .card-price {
+.card-price {
     flex: 1 1 auto;
-    font-size: 0.875rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
-  }
+    text-align: center;
+}
+
+#footer {
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: rgb(248, 157, 161);
+}
+
+.fab, .far {
+    font-weight: 400;
+    color: white;
+}
+
+.copyright {
+    display: flex;
+    position: relative;
+    left: 46%;
+    opacity: 0.7;
+    font-size: 80%;
+}
+
+.copyright p {
+    margin-top: 20%;
+}
+
+@media screen and (max-width: 1366px) {
+    .redesSociais {
+        display: flex;
+        position: relative;
+        left: 80%;
+    }  
+
+    .redes a { 
+        font-size: 200%;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .redesSociais {
+        display: flex;
+        position: relative;
+        left: 83%;
+    }  
+
+    .redes a { 
+        font-size: 250%;
+    }
+}
+
+.redes {
+    margin: 5% 10%;
+    padding: 2%;
+}
