@@ -2,6 +2,7 @@ const quartos = [
     {
       "photo": "https://a0.muscache.com/im/pictures/e6c4b347-49c7-4840-8c00-df36a2a273da.jpg?aki_policy=x_large",
       "property_type": "Apartamento",
+      "location": "Rio de Janeiro",
       "name": "Apartment in Son Parc, wonderful views",
       "price": 433,
       "guest": 2
@@ -10,6 +11,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/4a5326cb-95e4-4220-a4d8-c91f50cf784c.jpg?aki_policy=xx_large",
       "property_type": "Apartamento",
       "name": "APARTAMENTO IDEAL PAREJAS EN SON PARC",
+      "location": "São Paulo",
       "price": 368,
       "guest": 3
     },
@@ -17,6 +19,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/77a102a4-cf65-475e-be60-4d592307ab4a.jpg?aki_policy=xx_large",
       "property_type": "Casa",
       "name": "Casa Charmosa Bem Localizada",
+      "location": "Minas Gerais",
       "price": 70,
       "guest": 3
     },
@@ -24,6 +27,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/83de85c5-ce24-4cc4-ae85-dfb2300b4a06.jpg?aki_policy=xx_large",
       "property_type": "Casa",
       "name": "Quartos pertinho do Anhembi!",
+      "location": "São Paulo",
       "price": 189,
       "guest": 4
     },
@@ -31,6 +35,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/d5dbb5b2-12a3-4de5-87d0-5a66841eb731.jpg?aki_policy=xx_large",
       "property_type": "Chácara",
       "name": "Charming Chalet, private pool, free AC & WiFi",
+      "location": "Rio de Janeiro",
       "price": 737,
       "guest": 5
     },
@@ -38,6 +43,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/ce7dd48a-8125-4cea-a1b7-27ce0068d5d8.jpg?aki_policy=x_large",
       "property_type": "Chácara",
       "name": "Menorca Green Park C7",
+      "location": "Minas Gerais",
       "price": 520,
       "guest": 3
     },
@@ -45,6 +51,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/bea86611-2f82-487a-a62e-17ab268515de.jpg?aki_policy=xx_large",
       "property_type": "Chácara",
       "name": "Villa Monty",
+      "location": "Rio de Janeiro",
       "price": 1291,
       "guest": 5
     },
@@ -53,12 +60,14 @@ const quartos = [
       "property_type": "Estúdio",
       "name": "Bonito penthouse cerca del aeropuerto CDMX",
       "price": 73,
+      "location": "São Paulo",
       "guest": 2
     },
     {
       "photo": "https://a0.muscache.com/im/pictures/ac081c48-0161-4cde-a0e6-77b3bd933f94.jpg?aki_policy=xx_large",
       "property_type": "Estúdio",
       "name": "The Backpacker's Retreat - Balcony",
+      "location": "Minas gerais",
       "price": 51,
       "guest": 1
     },
@@ -66,6 +75,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/dc72255f-7965-4964-b89e-7bfb9f4aa939.jpg?aki_policy=x_large",
       "property_type": "Estúdio",
       "name": "10min airport, Foro Sol, Palacio de los Deportes",
+      "location": "Rio de Janeiro",
       "price": 81,
       "guest": 1
     },
@@ -73,6 +83,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/60f11b07-3aa2-4e03-ac03-6a0c12fbc35b.jpg?aki_policy=x_large",
       "property_type": "Estúdio",
       "name": "Acogedor depto cerca aeropuerto, foro Sol, Centro",
+      "location": "São Paulo",
       "price": 77,
       "guest": 1
     },
@@ -80,6 +91,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/f2379eb0-d77e-4a99-9df5-f16032693f0d.jpg?aki_policy=xx_large",
       "property_type": "Loft",
       "name": "Sol Nascente da Prainha",
+      "location": "Minas Gerais",
       "price": 200,
       "guest": 30
     },
@@ -87,6 +99,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/5ed611f3-fb3f-489e-b1cb-d5f26ea80c4c.jpg?aki_policy=xx_large",
       "property_type": "Loft",
       "name": "Ap novo com wi-fi na Prainha - Arraial do Cabo",
+      "location": "Rio de Janeiro",
       "price": 145,
       "guest": 3
     },
@@ -94,6 +107,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/207ef44d-fbe6-4fcd-9824-91b65de4b3cb.jpg?aki_policy=xx_large",
       "property_type": "Quarto",
       "name": "Suite @ Subway Trianon Masp",
+      "location": "Minas Gerais",
       "price": 69,
       "guest": 2
     },
@@ -101,6 +115,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/f94985db-d4db-4c10-8b9b-82342746601d.jpg?aki_policy=x_large",
       "property_type": "Quarto",
       "name": "Quarto Arouche Centro SP Ótima Localização",
+      "location": "São Paulo",
       "price": 45,
       "guest": 1
     },
@@ -108,6 +123,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/8b397c47-01af-4476-9fb8-784ab4df2c91.jpg?aki_policy=xx_large",
       "property_type": "Quarto",
       "name": "Quarto 1 - Parque da Aclimacão",
+      "location": "Rio de Janeiro",
       "price": 55,
       "guest": 2
     },
@@ -115,6 +131,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/c3c6432f-b140-4768-8d61-c160e639b7a8.jpg?aki_policy=x_large",
       "property_type": "Quarto",
       "name": "Existe amor em SP",
+      "location": "São Paulo",
       "price": 55,
       "guest": 2
     },
@@ -122,6 +139,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/306e0369-ab79-40be-bdb7-c87340dcdbc1.jpg?aki_policy=xx_large",
       "property_type": "Quarto",
       "name": "Confortável quarto de casal px. à Av. Paulista",
+      "location": "São Paulo",
       "price": 80,
       "guest": 2
     },
@@ -129,6 +147,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/f5abd356-8a66-495b-b00b-877e7eae0323.jpg?aki_policy=xx_large",
       "property_type": "Quarto",
       "name": "Room Higienopolis São Paulo",
+      "location": "São Paulo",
       "price": 80,
       "guest": 2
     },
@@ -136,6 +155,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/f1899868-21d0-44c2-b253-8b927821e178.jpg?aki_policy=xx_large",
       "property_type": "Quarto",
       "name": "Confortável quarto solteiro px. à Av. Paulista",
+      "location": "São Paulo",
       "price": 80,
       "guest": 1
     },
@@ -143,6 +163,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/6b46fa03-8ef3-4370-8158-390935279dcf.jpg?aki_policy=xx_large",
       "property_type": "Quarto",
       "name": "Modern, Cozy + all you need! Muito aconchegante!!",
+      "location": "Rio de Janeiro",
       "price": 66,
       "guest": 3
     },
@@ -150,6 +171,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/f074bead-ee2d-4c91-a958-2a0360e1ad7c.jpg?aki_policy=xx_large",
       "property_type": "Sítio",
       "name": "Recanto Rosana - Quartos e estrutura completa",
+      "location": "Rio de Janeiro",
       "price": 39,
       "guest": 4
     },
@@ -157,6 +179,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/de890df5-1279-481f-989c-97847f8482cd.jpg?aki_policy=xx_large",
       "property_type": "Sítio",
       "name": "Suite na Montanha - Refúgio do Artista",
+      "location": "Minas Gerais",
       "price": 77,
       "guest": 2
     },
@@ -164,6 +187,7 @@ const quartos = [
       "photo": "https://a0.muscache.com/im/pictures/17b61b71-3b06-4cec-bf8f-f32daea24f39.jpg?aki_policy=xx_large",
       "property_type": "Sítio",
       "name": "Sítio Costa do Sol",
+      "location": "Minas gerais",
       "price": 100,
       "guest": 5
     }
