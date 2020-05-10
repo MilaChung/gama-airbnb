@@ -51,23 +51,23 @@
               <div class="form-row">
                   <div class="col-5">
                     <label for="validationDefault03">Localização</label>
-                    <input type="search" class="form-control" id="validationDefault03" placeholder="Para onde gostaria de ir?" required>
+                    <input type="search" class="form-control search" onkeyup="filter()" id="validationDefault03" placeholder="Para onde gostaria de ir?">
                   </div>
                   <div class="col-2">
                     <label for="validationDefault04">Entrada</label>
-                    <input type="date" class="form-control" id="validationDefault04" placeholder="Insira as datas de entrada e saida" required>
+                    <input type="date" class="form-control date-in" onkeyup="filter()" id="validationDefault04" placeholder="Insira as datas de entrada e saida">
                   </div>
                   <div class="col-2">
                     <label for="validationDefault04">Saída</label>
-                    <input type="date" class="form-control" id="validationDefault04" placeholder="Insira as datas de entrada e saida" required>
+                    <input type="date" class="form-control date-out" onkeyup="filter()" id="validationDefault04" placeholder="Insira as datas de entrada e saida">
                     </div>
                   <div class="col-3">
                     <label for="validationDefault05">Hóspedes</label>
-                    <input type="number" class="form-control" id="validationDefault05" min="1" max="5" placeholder="1 até 5 hóspedes" required>
+                    <input type="number" class="form-control number" onkeyup="filter()" id="validationDefault05" min="1" max="5" placeholder="1 até 5 hóspedes">
                   </div>
               </div>
 
-              <button class="button btn btn-primary" type="submit">Buscar</button>
+              <button class="button btn btn-primary" type="submit" onclick="buttonFilter()">Buscar</button>
           </form>
 
           <div class="container">

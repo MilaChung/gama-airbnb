@@ -81,7 +81,7 @@ const quartos = [
       "property_type": "Loft",
       "name": "Sol Nascente da Prainha",
       "price": 200,
-      "guest": 3
+      "guest": 30
     },
     {
       "photo": "https://a0.muscache.com/im/pictures/5ed611f3-fb3f-489e-b1cb-d5f26ea80c4c.jpg?aki_policy=xx_large",
@@ -168,10 +168,16 @@ const quartos = [
       "guest": 5
     }
   ];
-  
+
+
+self.quartos = quartos;
 
 function selectHtmlElementById(id) {
   return document.querySelector(`#${id}`);
+}
+
+function selectHtmlElementByClass(classe) {
+ return document.querySelector(`.${classe}`);
 }
 
 function createHtmlElement(element) {
@@ -179,17 +185,17 @@ function createHtmlElement(element) {
 }
 
 function createItem(item) {
-  var li = createHtmlElement('li');
-  var img = createHtmlElement('img');
-  var sectionf = createHtmlElement('section');
-  var sections = createHtmlElement('section');
-  var pf = createHtmlElement('p');
-  var ps = createHtmlElement('p');
-  var button = createHtmlElement('button');
+  let li = createHtmlElement('li');
+  let img = createHtmlElement('img');
+  let sectionf = createHtmlElement('section');
+  let sections = createHtmlElement('section');
+  let pf = createHtmlElement('p');
+  let ps = createHtmlElement('p');
+  let button = createHtmlElement('button');
 
-  var type = document.createTextNode(item.property_type);
-  var price = document.createTextNode("R$ " + item.price);
-  var btn = document.createTextNode("Ver mais");
+  let type = document.createTextNode(item.property_type);
+  let price = document.createTextNode("R$ " + item.price);
+  let btn = document.createTextNode("Ver mais");
   
   $(li).attr("class", "cards-item");
   $(img).attr("src", item.photo);
@@ -213,8 +219,8 @@ function createItem(item) {
   return li;
 }
 
-function createItensAndAppendToList(){
-  var ul = self.selectHtmlElementById('cards');
+function createItensAndAppendToList(quartos){
+  let ul = self.selectHtmlElementById('cards');
   
   quartos.map(quarto => {
     const li = self.createItem(quarto);
@@ -224,7 +230,7 @@ function createItensAndAppendToList(){
 }
 
 $(document).ready(function(){
-  createItensAndAppendToList();
+  createItensAndAppendToList(self.quartos);
 });
 
 $(window).scroll(function() {
@@ -235,5 +241,32 @@ $(window).scroll(function() {
       $('.nav').removeClass('affix');
   }
 });
+
+function reloadThePage(){
+  window.location.reload();
+} 
+
+function buttonFilter () {
+  let filter = {
+    // "location": selectHtmlElementByClass("location").value,
+    // "property_type": selectHtmlElementByClass("type").value,
+    // "price": selectHtmlElementByClass('price').value,
+    "guest": selectHtmlElementByClass('number').value
+  };
+
+  let quartosFiltered = quartos.filter((quarto) => {
+    for (var key in filter) {
+      if (quarto[key] === undefined || quarto[key] != filter[key])
+        return false;
+    }
+  
+    return true;
+  });
+
+  $("#cards").empty();
+  createItensAndAppendToList(quartosFiltered);
+}
+
+
 
 
