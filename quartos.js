@@ -203,7 +203,6 @@ $(document).ready(function(){
 $(window).scroll(function() {
   if ($(document).scrollTop() > 230) {
       $('.nav').addClass('affix');
-      console.log("OK");
   } else {
       $('.nav').removeClass('affix');
   }
@@ -273,7 +272,6 @@ function constructFilterObj(filters) {
       if (filter[key] == ""){
         return;
       }
-
     return newFilterObj[key] = filter[key];
   })
 
@@ -293,14 +291,13 @@ function filterQuartos(filtersObj) {
 
 function buttonFilter () {
   let filters = [
-    {"property_type": selectHtmlElementByClass('type').value},
-    {"location": selectHtmlElementByClass('location').value},
+    {"location": selectHtmlElementById('validationDefault03').value},
+    {"property_type": selectHtmlElementById('validationDefault04').value},
     // "price": selectHtmlElementByClass('price').value,
-    {"guest": selectHtmlElementByClass('guest').value}
+    {"guest": selectHtmlElementById('validationDefault06').value}
   ];
   
   let filtersObj = constructFilterObj(filters);
-
   let quartosFiltered = filterQuartos(filtersObj);
 
   $("#cards").empty();
