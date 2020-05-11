@@ -89,16 +89,26 @@ html, body {
 
 .button {
     margin-right: 1%;
+    margin-top: 2%;
     background-color: rgba(245, 112, 119, 0.8);
     border-color: rgba(245, 112, 119, 0.8);
     border-radius: 10px;
     color: white;
 }
 
-img.photo {
-    height: 30rem;
-    max-width: 100%;
-} 
+@media screen and (max-width: 1366px) {
+    img.photo {
+        height: auto;
+        max-width: 100%;
+    }   
+}
+
+@media screen and (min-width: 1367px) {
+    img.photo {
+        height: 30rem;
+        max-width: 100%;
+    }     
+}
 
 #cards {
     display: flex;
